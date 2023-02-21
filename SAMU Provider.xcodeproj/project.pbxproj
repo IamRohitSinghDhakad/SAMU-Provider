@@ -14,6 +14,8 @@
 		F92D6A3A28DE1545004E18E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D6A3828DE1545004E18E2 /* Main.storyboard */; };
 		F92D6A3C28DE1547004E18E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92D6A3B28DE1547004E18E2 /* Assets.xcassets */; };
 		F92D6A3F28DE1547004E18E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D6A3D28DE1547004E18E2 /* LaunchScreen.storyboard */; };
+		F9CA5F052909184F00EF5AF7 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA5F032909184F00EF5AF7 /* Auth.storyboard */; };
+		F9CA5F062909184F00EF5AF7 /* LocationPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CA5F042909184F00EF5AF7 /* LocationPicker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F92D6A3B28DE1547004E18E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92D6A3E28DE1547004E18E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92D6A4028DE1547004E18E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9CA5F032909184F00EF5AF7 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		F9CA5F042909184F00EF5AF7 /* LocationPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationPicker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 				92381D69B3D99DFFC616115B /* Pods-SAMU Provider.debug.xcconfig */,
 				D09D01D403AA87DE53D5DBCD /* Pods-SAMU Provider.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,9 +84,9 @@
 		F92D6A3128DE1545004E18E2 /* SAMU Provider */ = {
 			isa = PBXGroup;
 			children = (
+				F9CA5F022909183700EF5AF7 /* UserInterface */,
 				F92D6A4628DE1567004E18E2 /* AppDelegate */,
 				F92D6A3628DE1545004E18E2 /* ViewController.swift */,
-				F92D6A3828DE1545004E18E2 /* Main.storyboard */,
 				F92D6A3B28DE1547004E18E2 /* Assets.xcassets */,
 				F92D6A3D28DE1547004E18E2 /* LaunchScreen.storyboard */,
 				F92D6A4028DE1547004E18E2 /* Info.plist */,
@@ -98,6 +101,16 @@
 				F92D6A3428DE1545004E18E2 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F9CA5F022909183700EF5AF7 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				F92D6A3828DE1545004E18E2 /* Main.storyboard */,
+				F9CA5F032909184F00EF5AF7 /* Auth.storyboard */,
+				F9CA5F042909184F00EF5AF7 /* LocationPicker.storyboard */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CA5F052909184F00EF5AF7 /* Auth.storyboard in Resources */,
 				F92D6A3F28DE1547004E18E2 /* LaunchScreen.storyboard in Resources */,
+				F9CA5F062909184F00EF5AF7 /* LocationPicker.storyboard in Resources */,
 				F92D6A3C28DE1547004E18E2 /* Assets.xcassets in Resources */,
 				F92D6A3A28DE1545004E18E2 /* Main.storyboard in Resources */,
 			);

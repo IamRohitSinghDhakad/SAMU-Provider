@@ -7,13 +7,27 @@
 
 import UIKit
 
+let ObjAppdelegate = UIApplication.shared.delegate as! AppDelegate
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
+    var navController: UINavigationController?
+    
+    //MARK: - Create shared preference
+        private static var AppDelegateManager: AppDelegate = {
+            let manager = UIApplication.shared.delegate as! AppDelegate
+            return manager
+        }()
+    // MARK: - Accessors
+        class func AppDelegateObject() -> AppDelegate {
+            return AppDelegateManager
+        }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       
         return true
     }
 
